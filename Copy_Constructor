@@ -23,15 +23,21 @@ class Student
     age = a.age;
     roll_no = a.roll_no;
   }
+  
+  void display() {
+        cout << "Name: " << name << " | Age: " << age << " | Roll No: " << roll_no << endl;
+    }
 };
 int main() 
 {
   Student obj1("Abhinav",21,01);
-  // Student obj2("Ayush",21,02);
-  Student obj2(obj1);
+  Student obj2("Ayush",21,02);
+  Student obj3(obj1);
   
   
-  
+  obj1.display();
+  obj2.display();
+  obj3.display();
   
   
     return 0;
